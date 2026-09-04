@@ -6,8 +6,15 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "preview": "vite preview",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "e2e": "npm run build && start-server-and-test preview http://localhost:4173 cypress:run",
+    "e2e:open": "start-server-and-test dev http://localhost:5173 cypress:open",
+    "cypress:run": "cypress run",
+    "cypress:open": "cypress open"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.12.0",
@@ -20,15 +27,24 @@
     "@eslint/js": "^10.0.1",
     "@stylistic/eslint-plugin": "^5.10.0",
     "@tailwindcss/vite": "^4.3.3",
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.3",
+    "@testing-library/user-event": "^14.6.7",
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.4",
     "@vitejs/plugin-react": "^6.1.0",
+    "@vitest/coverage-v8": "^5.0.0",
+    "cypress": "^16.0.0",
     "eslint": "^10.9.0",
     "eslint-config-google": "^0.14.0",
+    "eslint-plugin-cypress": "^7.0.1",
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.4",
     "globals": "^17.11.0",
+    "jsdom": "^30.0.1",
+    "start-server-and-test": "^3.0.12",
     "tailwindcss": "^4.3.3",
-    "vite": "^8.2.2"
+    "vite": "^8.2.2",
+    "vitest": "^5.0.0"
   }
 }

@@ -1,0 +1,30 @@
+{
+  "status": "success",
+  "message": "ok",
+  "data": {
+    "threads": [
+      {
+        "id": "thread-cypress-1",
+        "title": "Bagaimana cara menguji aplikasi React?",
+        "body": "<p>Saya ingin tahu praktik terbaik pengujian pada React.</p>",
+        "category": "testing",
+        "createdAt": "2024-05-01T07:00:00.000Z",
+        "ownerId": "user-lain",
+        "upVotesBy": [],
+        "downVotesBy": [],
+        "totalComments": 2
+      },
+      {
+        "id": "thread-cypress-2",
+        "title": "Tips mengelola state dengan Redux Toolkit",
+        "body": "<p>Bagikan tips Anda dalam mengelola state aplikasi.</p>",
+        "category": "redux",
+        "createdAt": "2024-05-02T07:00:00.000Z",
+        "ownerId": "user-cypress",
+        "upVotesBy": ["user-lain"],
+        "downVotesBy": [],
+        "totalComments": 0
+      }
+    ]
+  }
+}

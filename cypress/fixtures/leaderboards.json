@@ -1,0 +1,26 @@
+{
+  "status": "success",
+  "message": "ok",
+  "data": {
+    "leaderboards": [
+      {
+        "user": {
+          "id": "user-cypress",
+          "name": "Khairil Cypress",
+          "email": "khairil@cypress.test",
+          "avatar": "https://ui-avatars.com/api/?name=Khairil+Cypress&background=random"
+        },
+        "score": 25
+      },
+      {
+        "user": {
+          "id": "user-lain",
+          "name": "Pengguna Lain",
+          "email": "lain@cypress.test",
+          "avatar": "https://ui-avatars.com/api/?name=Pengguna+Lain&background=random"
+        },
+        "score": 10
+      }
+    ]
+  }
+}

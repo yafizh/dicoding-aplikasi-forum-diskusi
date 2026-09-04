@@ -22,3 +22,13 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Testing
+coverage
+cypress/screenshots
+cypress/videos
+cypress/downloads
+cypress.env.json
+
+# Vercel
+.vercel

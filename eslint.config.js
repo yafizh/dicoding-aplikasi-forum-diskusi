@@ -1,6 +1,7 @@
 import js from '@eslint/js';
 import stylistic from '@stylistic/eslint-plugin';
 import reactHooks from 'eslint-plugin-react-hooks';
+import pluginCypress from 'eslint-plugin-cypress';
 import reactRefresh from 'eslint-plugin-react-refresh';
 import {defineConfig, globalIgnores} from 'eslint/config';
 import globals from 'globals';
@@ -68,6 +69,24 @@ export default defineConfig([
         ignoreRegExpLiterals: true,
       }],
       '@stylistic/jsx-quotes': ['error', 'prefer-double'],
+    },
+  },
+  {
+    files: ['src/**/*.test.{js,jsx}', 'src/tests/**/*.{js,jsx}'],
+    rules: {'react-refresh/only-export-components': 'off'},
+  },
+  {
+    files: ['cypress/**/*.js', 'cypress.config.js'],
+    extends: [pluginCypress.configs.recommended],
+    rules: {
+      ...buildGoogleStyleRules(),
+      '@stylistic/max-len': ['error', {
+        code: 80,
+        tabWidth: 2,
+        ignoreUrls: true,
+        ignoreStrings: true,
+        ignoreTemplateLiterals: true,
+      }],
     },
   },
 ]);

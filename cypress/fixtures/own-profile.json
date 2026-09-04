@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "message": "ok",
+  "data": {
+    "user": {
+      "id": "user-cypress",
+      "name": "Khairil Cypress",
+      "email": "khairil@cypress.test",
+      "avatar": "https://ui-avatars.com/api/?name=Khairil+Cypress&background=random"
+    }
+  }
+}

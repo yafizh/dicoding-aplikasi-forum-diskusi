@@ -1,0 +1,7 @@
+{
+  "status": "success",
+  "message": "ok",
+  "data": {
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.cypress-fake-token"
+  }
+}
