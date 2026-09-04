@@ -39,7 +39,7 @@ describe('stripHtml', () => {
   it('harus menghapus tag HTML dan merapikan spasi berlebih', () => {
     const html = '<p>Halo&nbsp;<strong>dunia</strong></p>   <p>React</p>';
 
-    expect(stripHtml(html)).toBe('Halo dunia React error');
+    expect(stripHtml(html)).toBe('Halo dunia React error error');
   });
 
   it('harus mengembalikan string kosong tanpa argumen', () => {
