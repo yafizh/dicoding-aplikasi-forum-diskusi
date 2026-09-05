@@ -16,10 +16,10 @@ const LeaderboardSkeleton = () => (
   <div className="divide-y divide-slate-100" aria-hidden="true">
     {Array.from({length: 5}, (_, index) => (
       <div key={index} className="flex items-center gap-3 px-5 py-4">
-        <Skeleton className="h-8 w-8 rounded-full" />
-        <Skeleton className="h-9 w-9 rounded-full" />
-        <Skeleton className="h-4 flex-1" />
-        <Skeleton className="h-4 w-8" />
+        <Skeleton circle width="2rem" height="2rem" />
+        <Skeleton circle width="2.25rem" height="2.25rem" />
+        <Skeleton className="flex-1" height="1rem" />
+        <Skeleton width="2rem" height="1rem" />
       </div>
     ))}
   </div>

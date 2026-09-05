@@ -8,13 +8,13 @@ const ThreadListSkeleton = ({count = 3}) => (
         className="rounded-xl border border-slate-200 bg-white p-5"
       >
         <div className="flex items-center gap-2">
-          <Skeleton className="h-7 w-7 rounded-full" />
-          <Skeleton className="h-3.5 w-28" />
+          <Skeleton circle width="1.75rem" height="1.75rem" />
+          <Skeleton width="7rem" height="0.875rem" />
         </div>
-        <Skeleton className="mt-4 h-5 w-3/5" />
-        <Skeleton className="mt-3 h-3.5 w-full" />
-        <Skeleton className="mt-2 h-3.5 w-4/5" />
-        <Skeleton className="mt-5 h-6 w-40" />
+        <Skeleton className="mt-4" width="60%" height="1.25rem" />
+        <Skeleton className="mt-3" height="0.875rem" />
+        <Skeleton className="mt-2" width="80%" height="0.875rem" />
+        <Skeleton className="mt-5" width="10rem" height="1.5rem" />
       </div>
     ))}
   </div>

@@ -17,16 +17,19 @@ import {
 } from '../states/threadDetail/threadDetailSlice';
 
 const DetailSkeleton = () => (
-  <div className="rounded-xl border border-slate-200 bg-white p-6">
-    <Skeleton className="h-5 w-24 rounded-full" />
-    <Skeleton className="mt-4 h-7 w-3/4" />
+  <div
+    className="rounded-xl border border-slate-200 bg-white p-6"
+    aria-hidden="true"
+  >
+    <Skeleton width="6rem" height="1.25rem" borderRadius="9999px" />
+    <Skeleton className="mt-4" width="75%" height="1.75rem" />
     <div className="mt-5 flex items-center gap-2">
-      <Skeleton className="h-9 w-9 rounded-full" />
-      <Skeleton className="h-4 w-32" />
+      <Skeleton circle width="2.25rem" height="2.25rem" />
+      <Skeleton width="8rem" height="1rem" />
     </div>
-    <Skeleton className="mt-6 h-4 w-full" />
-    <Skeleton className="mt-2 h-4 w-full" />
-    <Skeleton className="mt-2 h-4 w-2/3" />
+    <Skeleton className="mt-6" height="1rem" />
+    <Skeleton className="mt-2" height="1rem" />
+    <Skeleton className="mt-2" width="66%" height="1rem" />
   </div>
 );
 
