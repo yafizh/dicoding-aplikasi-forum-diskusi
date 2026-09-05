@@ -15,7 +15,7 @@
     "e2e:open": "start-server-and-test dev http://localhost:5173 cypress:open",
     "cypress:run": "cypress run",
     "cypress:open": "cypress open",
-    "ci:test": "vitest --no-watch && start-server-and-test dev http-get://0.0.0.0:5173 e2e"
+    "ci:test": "vitest run && npm run e2e"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.12.0",
